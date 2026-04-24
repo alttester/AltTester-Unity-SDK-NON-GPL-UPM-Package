@@ -58,8 +58,10 @@ public static class AltProxyFinderPostProcess
             // is accessible at runtime. Unity links .a plugins to Unity-iPhone by default; symbols
             // in the main executable are not exported to the embedded UnityFramework dynamic library,
             // which causes a "missing symbol called" dyld crash when the symbol is invoked.
-            string nativeDialogLibGuid = project.FindFileGuidByProjectPath(
-                "Libraries/AltTester/Runtime/Plugins/iOS/libNativeInputDialog.a");
+            string nativeDialogLibGuid =
+                project.FindFileGuidByProjectPath("Libraries/com.alttester.sdk/Runtime/Plugins/iOS/libNativeInputDialog.a");
+            if (string.IsNullOrEmpty(nativeDialogLibGuid))
+                nativeDialogLibGuid = project.FindFileGuidByProjectPath("Libraries/AltTester/Runtime/Plugins/iOS/libNativeInputDialog.a");
             if (!string.IsNullOrEmpty(nativeDialogLibGuid))
             {
                 project.AddFileToBuild(unityFrameworkGuid, nativeDialogLibGuid);
@@ -72,8 +74,10 @@ public static class AltProxyFinderPostProcess
 
             // Explicitly link libAltProxyFinder.a to UnityFramework so that _getProxy
             // is accessible at runtime.
-            string proxyFinderLibGuid = project.FindFileGuidByProjectPath(
-                "Libraries/AltTester/Runtime/AltDriver/Proxy/Plugins/iOS/AltProxyFinder/libAltProxyFinder.a");
+            string proxyFinderLibGuid =
+                project.FindFileGuidByProjectPath("Libraries/com.alttester.sdk/Runtime/AltDriver/Proxy/Plugins/iOS/AltProxyFinder/libAltProxyFinder.a");
+            if (string.IsNullOrEmpty(proxyFinderLibGuid))
+                proxyFinderLibGuid = project.FindFileGuidByProjectPath("Libraries/AltTester/Runtime/AltDriver/Proxy/Plugins/iOS/AltProxyFinder/libAltProxyFinder.a");
             if (!string.IsNullOrEmpty(proxyFinderLibGuid))
             {
                 project.AddFileToBuild(unityFrameworkGuid, proxyFinderLibGuid);
