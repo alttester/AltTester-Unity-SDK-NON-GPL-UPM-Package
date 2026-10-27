@@ -3,7 +3,7 @@
         <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
     </assembly>
 
-    <assembly fullname="NLog">
+    <assembly fullname="NLog" ignoreIfMissing="1">
         <type fullname="NLog.*" preserve="all" />
     </assembly>
 

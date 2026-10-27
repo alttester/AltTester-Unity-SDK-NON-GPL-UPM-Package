@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 073b4757a51a467f9b9a79794f9d8479
+guid: c92b6898ab93563faaada7d131da40dc
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
   executionOrder: {}
   defineConstraints:
+    - "ALTTESTER"
     - "ENABLE_LEGACY_INPUT_MANAGER"
     - "!ENABLE_INPUT_SYSTEM"
     - "!UNITY_6000_0_OR_NEWER"
