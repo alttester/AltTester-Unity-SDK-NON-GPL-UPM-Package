@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70885aa8b0c74446a5170eb2be46a0a9
+guid: b982e1d496c75fcb9cc267a21d049a71
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -10,6 +10,7 @@ PluginImporter:
     - "!ENABLE_INPUT_SYSTEM"
     - "UNITY_6000_0_OR_NEWER"
     - "ENABLE_LEGACY_INPUT_MANAGER"
+    - "!UNITY_6000_4_OR_NEWER"
   isPreloaded: 0
   isOverridable: 0
   isExplicitlyReferenced: 0

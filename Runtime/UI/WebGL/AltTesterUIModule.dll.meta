@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 5eb9fdbc94cb4af39110def91f8cb2d4
+guid: 8a69bf93058552bd831bb363f044ca7e
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
   executionOrder: {}
   defineConstraints:
+    - "ALTTESTER"
     - "UNITY_WEBGL"
     - "!UNITY_EDITOR"
   isPreloaded: 0

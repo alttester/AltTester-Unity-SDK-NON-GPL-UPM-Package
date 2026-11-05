@@ -1,11 +1,12 @@
 fileFormatVersion: 2
-guid: 952fc5c24775423d8f948e68c3569856
+guid: 024463f5eb3453488aa03358fa668fc1
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
   executionOrder: {}
   defineConstraints:
+    - "ALTTESTER"
     - "UNITY_ANDROID"
     - "!UNITY_EDITOR"
   isPreloaded: 0
